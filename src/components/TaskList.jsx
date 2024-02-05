@@ -7,10 +7,10 @@ const TaskList = () => {
   const [newTask, setNewTask] = useState('')
 
   const addTask = () => {
-    if (newTask.trim() === '') return;
-    setTasks([...tasks, newTask]);
-    setNewTask('');
-  };
+    if (newTask.trim() === '') return
+    setTasks([...tasks, newTask])
+    setNewTask('')
+  }
 
   return (
     <div>
@@ -34,4 +34,4 @@ const TaskList = () => {
   );
 };
 
-export default TaskList;
+export default TaskList
